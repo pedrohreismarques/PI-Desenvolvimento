@@ -13,9 +13,11 @@ Para esse projeto, recebemos o desafio de desenvolver uma aplicação Web onde e
 - Java;
 - JavaScript.
 
-Esse projeto está sendo desenvolvido por: 
+## Integrantes
 
-- Anna Luiza Ferreira Costa dos Santos;
-- Gabriely Barreto Almeida;
-- Pedro Henrique dos Reis Marques;
-- Vitória Cristina Correa dos Santos.
+Esse projeto está sendo desenvolvido por:
+
+- Anna Luiza Ferreira Costa dos Santos [![Ver no GitHub](https://shields.io)](https://github.com/AnnaLuSant);
+- Gabriely Barreto Almeida [![Ver no GitHub](https://shields.io)](https://github.com/barretoalmeida);
+- Pedro Henrique dos Reis Marques [![Ver no GitHub](https://shields.io)](https://github.com/pedrohreismarques);
+- Vitória Cristina Correa dos Santos [![Ver no GitHub](https://shields.io)](https://github.com/vcorreasantos).
