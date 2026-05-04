@@ -17,7 +17,7 @@ Para esse projeto, recebemos o desafio de desenvolver uma aplicação Web onde e
 
 Esse projeto está sendo desenvolvido por:
 
-- Anna Luiza Ferreira Costa dos Santos [![Ver no GitHub](https://shields.io)](https://github.com/AnnaLuSant);
-- Gabriely Barreto Almeida [![Ver no GitHub](https://shields.io)](https://github.com/barretoalmeida);
-- Pedro Henrique dos Reis Marques [![Ver no GitHub](https://shields.io)](https://github.com/pedrohreismarques);
-- Vitória Cristina Correa dos Santos [![Ver no GitHub](https://shields.io)](https://github.com/vcorreasantos).
+- Anna Luiza Ferreira Costa dos Santos [![GitHub](https://shields.io)](https://github.com/AnnaLuSant);
+- Gabriely Barreto Almeida [![GitHub](https://shields.io)](https://github.com/barretoalmeida);
+- Pedro Henrique dos Reis Marques [![GitHub](https://shields.io)](https://github.com/pedrohreismarques);
+- Vitória Cristina Correa dos Santos [![GitHub](https://shields.io)](https://github.com/vcorreasantos).
