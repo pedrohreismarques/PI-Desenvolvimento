@@ -10,8 +10,10 @@ body {
 
 	background: linear-gradient(#053969, #0d5ea8);
 
-	font-family:'Orbitron', sans-serif;
+	font-family:'Inter', sans-serif;
+	font-weight: bold;
 }
+
 
 .container {
 	text-align: center;
@@ -63,7 +65,7 @@ body{
 	justify-content:center;
 	align-items:center;
 
-	background: linear-gradient(#083b73, #0d5ea8);
+	background: linear-gradient(#053969, #0d5ea8);
 
 	font-family: 'Orbitron', sans-serif;
 
