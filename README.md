@@ -20,7 +20,7 @@ Para esse projeto, recebemos o desafio de desenvolver uma aplicação Web onde e
 - Java;
 - JavaScript.
 
-## Colaboradores
+## Equipe
 
 Esse projeto está sendo desenvolvido por:
 
