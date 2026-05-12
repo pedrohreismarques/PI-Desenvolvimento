@@ -12,7 +12,8 @@ Para esse projeto, recebemos o desafio de desenvolver uma aplicação Web onde e
 - Azul vívido (#03388f);
 - Azure escure (#053969);
 - Branco (#ffffff);
-- Laranja (#df6f20)
+- Laranja (#df6f20);
+- Preto (#000000).
 
 ## Back-end e Banco de Dados
 - SQL (MySQL);
