@@ -24,10 +24,10 @@ Para esse projeto, recebemos o desafio de desenvolver uma aplicação Web onde e
 
 Esse projeto está sendo desenvolvido por:
 
-- Anna Luiza Ferreira Costa dos Santos - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/AnnaLuSant)
-- Gabriely Barreto Almeida - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/barretoalmeida)
-- Pedro Henrique dos Reis Marques - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/pedrohreismarques)
-- Vitória Cristina Correa dos Santos - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/vcorreasantos)
+- Anna Luiza Ferreira Costa dos Santos (Back-end e Banco de Dados) - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/AnnaLuSant)
+- Gabriely Barreto Almeida (Back-end e Banco de Dados) - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/barretoalmeida)
+- Pedro Henrique dos Reis Marques (Front-end) - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/pedrohreismarques)
+- Vitória Cristina Correa dos Santos (Front-end) - [![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/vcorreasantos)
 
 ## Nosso mascote
 
