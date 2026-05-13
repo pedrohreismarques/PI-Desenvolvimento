@@ -12,7 +12,7 @@ body {
 
 	background: linear-gradient(#053969, #0d5ea8);
 
-	font-family:'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 
 	overflow: hidden;
 }
@@ -97,23 +97,23 @@ h5 {
 	margin-bottom: 20px;
 }
 
-.tela-bemvindo p{
-	max-width:600px;
+.tela-bemvindo p {
+	max-width: 600px;
 
-	font-size:clamp(16px, 2vw, 22px);
-	font-weight:300;
+	font-size: clamp(16px, 2vw, 22px);
+	font-weight: 300;
 
-	line-height:1.8;
-	letter-spacing:0.5px;
+	line-height: 1.8;
+	letter-spacing: 0.5px;
 
-	color:rgba(255,255,255,0.9);
+	color: rgba(255, 255, 255, 0.9);
 
-	margin-bottom:40px;
+	margin-bottom: 40px;
 }
 
-.tela-bemvindo p strong{
-	font-weight:700;
-	color:white;
+.tela-bemvindo p strong {
+	font-weight: 700;
+	color: white;
 }
 
 .btn {
@@ -125,13 +125,14 @@ h5 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration:none;
 
 	margin-top: 20px;
 
 	border: none;
 	border-radius: 50px;
 
-	background: #c9692c;
+	background: #07005e;
 
 	color: white;
 
@@ -148,8 +149,145 @@ h5 {
 }
 
 .visitante {
-	background: #c9692c;
+	background: #07005e;
 }
+
+/* ===== TELA CADASTRO ===== */
+
+.tela-cadastro h1 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.tela-cadastro p {
+	max-width: 600px;
+
+	font-size: clamp(16px, 2vw, 22px);
+	font-weight: 300;
+
+	line-height: 1.8;
+	letter-spacing: 0.5px;
+
+	color: rgba(255, 255, 255, 0.9);
+
+	margin-bottom: 35px;
+}
+
+.tela-cadastro p strong {
+	font-weight: 700;
+	color: white;
+}
+
+/* INPUTS */
+
+input,
+select {
+	width: 100%;
+	max-width: 400px;
+
+	height: 60px;
+
+	padding: 0 20px;
+	margin-bottom: 20px;
+
+	box-sizing: border-box;
+
+	border: none;
+	border-radius: 20px;
+
+	background: rgba(255, 255, 255, 0.15);
+
+	color: white;
+
+	font-size: 18px;
+	font-family: 'Inter', sans-serif;
+
+	outline: none;
+
+	backdrop-filter: blur(10px);
+}
+
+/* Placeholder */
+input::placeholder {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* Select */
+select {
+	cursor: pointer;
+}
+
+option {
+	color: black;
+}
+/*tela visitante*/
+.tela-cadastro h1 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.tela-cadastro p {
+	max-width: 600px;
+
+	font-size: clamp(16px, 2vw, 22px);
+	font-weight: 300;
+
+	line-height: 1.8;
+	letter-spacing: 0.5px;
+
+	color: rgba(255, 255, 255, 0.9);
+
+	margin-bottom: 35px;
+}
+
+.tela-cadastro p strong {
+	font-weight: 700;
+	color: white;
+}
+
+/* INPUTS */
+
+input,
+select {
+	width: 100%;
+	max-width: 400px;
+
+	height: 60px;
+
+	padding: 0 20px;
+	margin-bottom: 20px;
+
+	box-sizing: border-box;
+
+	border: none;
+	border-radius: 20px;
+
+	background: rgba(255, 255, 255, 0.15);
+
+	color: white;
+
+	font-size: 18px;
+	font-family: 'Inter', sans-serif;
+
+	outline: none;
+
+	backdrop-filter: blur(10px);
+}
+
+/* Placeholder */
+input::placeholder {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* Select */
+select {
+	cursor: pointer;
+}
+
+option {
+	color: black;
+}
+
 
 /* CELULAR */
 @media (max-width:768px) {
