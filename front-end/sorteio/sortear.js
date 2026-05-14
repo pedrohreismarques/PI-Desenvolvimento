@@ -1,6 +1,5 @@
 function sortear() {
 
-    // Agora miramos no quadrado branco (display-container) e não no traço
     const display = document.getElementById('display-container'); 
     
     let contador = 0;
@@ -19,5 +18,5 @@ function sortear() {
         }
 
     }, 50);
-    
+
 }
