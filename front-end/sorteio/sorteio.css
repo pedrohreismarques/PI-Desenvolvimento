@@ -5,6 +5,7 @@
 */
 
 /* VARIÁVEIS - CORES */
+
 :root {
 
     --azulVivido: #03388f;
@@ -18,24 +19,68 @@
 /* FORMATAÇÃO DO "CORPO" DA APLICAÇÃO */
 body {
 
-    display: flex;
-    justify-content: center;
-
-    background: url(/front-end/img/fundo.png);
+    background: radial-gradient(circle, var(--azulVivido) 0%, var(--azureEscuro) 100%);
+    font-family: 'Inter', sans-serif;
 
 }
 
-.title {
+.traco {
 
-    color: var(--branco);
-    font-size: 5rem;
-    margin-top: 60px;
+    width: 35px;
+    height: 8px;
+    background-color: var(--laranja);
+    border-radius: 4px;
 
 }
 
-footer {
+.quadrado-sorteio {
 
-    color: var(--branco);
-    font-size: 1rem;
+    width: 250px;
+    height: 250px;
+    border: 15px solid var(--laranja);
+    border-radius: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    margin-top: 50px;
+
+}
+
+.btn-laranja {
+
+    background-color: var(--laranja) !important;
+    color: var(--branco) !important;
+    border: none;
+    line-height: 1.2;
+    margin-top: 50px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+.btn-laranja:hover {
+
+    transform: scale(1.03);
+    filter: brightness(0.95);
+
+}
+
+.numero-final {
+
+    font-size: 7rem;
+    font-weight: 900;
+    color: var(--laranja);
+    line-height: 1;
+    animation: zoomIn 0.2s ease;
+
+}
+
+@keyframes zoomIn {
+
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+
+}
+
+.borda {
+
+    border: 15px solid var(--laranja);
 
 }

@@ -24,27 +24,50 @@
 
     <header class="mt-5">
 
-        <h1 class="display-1 fw-bold"> SORTEIO </h1>
+        <h1 class="display-1 fw-bold"> NÚMEROS SORTEADOS </h1>
 
     </header>
 
 
-    <main class="d-flex flex-column align-items-center gap-4">
+    <main class="bg-white p-3 p-md-4 rounded-4 shadow-sm mb-4 borda mt-5">
 
-        <div class="quadrado-sorteio bg-white d-flex align-items-center justify-content-center" id="display-container">
+        <div class="bg-white p-3 p-md-4 rounded-4 shadow-sm mb-4 borda" id="display-container">
 
-            <div class="traco" id="conteudo"></div>
+            <table class="table">
 
-        </div>
+                <thead>
 
-        <div class="d-flex gap-3">
+                    <tr>
 
-            <a class="btn btn-laranja btn-lg fw-bold px-5 py-4" onclick="sortear()">Sortear</a>
-            <a class="btn btn-laranja btn-lg fw-bold px-5 py-2" href="tabela.html">Números<br>Sorteados</a>
+                        <th scope="col"> Números</th>
+                        <th scope="col"> Nome </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <th scope="row"> 1 </th>
+                        <td> Mark </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
 
         </div>
 
     </main>
+
+    <div class="d-flex gap-3">
+
+        <a class="btn btn-laranja btn-lg fw-bold px-5 py-4" href="sorteio.html"> Voltar </a>
+
+    </div>
 
     <footer class="mb-4 mt-5">
 
