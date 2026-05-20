@@ -289,6 +289,9 @@ transition: 0.3s;
 
     transform: scale(0.96);
 }
+.tela-sucesso #robo {
+    width: clamp(220px, 30vw, 380px);
+}
 
 
 #confete {
