@@ -1,313 +1,346 @@
 @charset "UTF-8";
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 
-	min-height: 100vh;
+    min-height: 100vh;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-	background: linear-gradient(#053969, #0d5ea8);
+    background: linear-gradient(#053969, #0d5ea8);
 
-	font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .container {
-	width: 90%;
-	max-width: 900px;
+    width: 90%;
+    max-width: 900px;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-	color: white;
+    color: white;
+}
+
+form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* TITULO */
 h1 {
-	font-size: clamp(35px, 6vw, 75px);
+    font-size: clamp(35px, 6vw, 75px);
 
-	margin: 0;
-	margin-top: -80px;
-	margin-bottom: 30px;
+    margin: 0;
+    margin-top: -80px;
+    margin-bottom: 30px;
 }
 
 /* ROBO */
 #robo {
-	width: clamp(120px, 20vw, 220px);
-	height: auto;
+    width: clamp(120px, 20vw, 220px);
+    height: auto;
 
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 /* BOTAO */
 .btn-entrar {
-	width: 100%;
-	max-width: 350px;
+    width: 100%;
+    max-width: 350px;
 
-	height: clamp(60px, 8vw, 90px);
+    height: clamp(60px, 8vw, 90px);
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-	border: none;
-	border-radius: 50px;
+    border: none;
+    border-radius: 50px;
 
-	background: #07005e;
+    background: #07005e;
 
-	color: white;
+    color: white;
 
-	font-size: clamp(20px, 3vw, 36px);
-	font-weight: bold;
+    font-size: clamp(20px, 3vw, 36px);
+    font-weight: bold;
 
-	text-decoration: none;
+    text-decoration: none;
 
-	cursor: pointer;
+    cursor: pointer;
 
-	transition: 0.3s;
+    transition: 0.3s;
 }
 
 .btn-entrar:hover {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* TEXTO FINAL */
 h5 {
-	font-size: clamp(14px, 2vw, 20px);
+    font-size: clamp(14px, 2vw, 20px);
 
-	font-weight: 500;
+    font-weight: 500;
 
-	margin-top: 120px;
-	margin-bottom: 0;
+    margin-top: 120px;
+    margin-bottom: 0;
 
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 /* TELA BEM-VINDO */
 
 .tela-bemvindo h1 {
-	margin-top: 10px;
-	margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .tela-bemvindo p {
-	max-width: 600px;
+    max-width: 600px;
 
-	font-size: clamp(16px, 2vw, 22px);
-	font-weight: 300;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 300;
 
-	line-height: 1.8;
-	letter-spacing: 0.5px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
 
-	color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .tela-bemvindo p strong {
-	font-weight: 700;
-	color: white;
+    font-weight: 700;
+    color: white;
 }
 
 .btn {
-	width: 100%;
-	max-width: 350px;
+    width: 100%;
+    max-width: 350px;
 
-	height: clamp(60px, 8vw, 90px);
+    height: clamp(60px, 8vw, 90px);
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-	margin-top: 20px;
+    text-decoration: none;
 
-	border: none;
-	border-radius: 50px;
+    margin-top: 20px;
 
-	background: #07005e;
+    border: none;
+    border-radius: 50px;
 
-	color: white;
+    background: #07005e;
 
-	font-size: clamp(20px, 3vw, 32px);
-	font-weight: bold;
+    color: white;
 
-	cursor: pointer;
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: bold;
 
-	transition: 0.3s;
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
 .btn:hover {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .visitante {
-	background: #07005e;
+    background: #07005e;
 }
 
 /* ===== TELA CADASTRO ===== */
 
 .tela-cadastro h1 {
-	margin-top: 10px;
-	margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .tela-cadastro p {
-	max-width: 600px;
+    max-width: 600px;
 
-	font-size: clamp(16px, 2vw, 22px);
-	font-weight: 300;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 300;
 
-	line-height: 1.8;
-	letter-spacing: 0.5px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
 
-	color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 
-	margin-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 .tela-cadastro p strong {
-	font-weight: 700;
-	color: white;
+    font-weight: 700;
+    color: white;
 }
 
 /* INPUTS */
 
 input,
 select {
-	width: 100%;
-	max-width: 400px;
+    width: 100%;
+    max-width: 400px;
 
-	height: 60px;
+    height: 60px;
 
-	padding: 0 20px;
-	margin-bottom: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
 
-	box-sizing: border-box;
+    box-sizing: border-box;
 
-	border: none;
-	border-radius: 20px;
+    border: none;
+    border-radius: 20px;
 
-	background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15);
 
-	color: white;
+    color: white;
 
-	font-size: 18px;
-	font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
 
-	outline: none;
+    outline: none;
 
-	backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
 }
 
 /* Placeholder */
+
 input::placeholder {
-	color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* Select */
+
 select {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 option {
-	color: black;
+    background: #87CEFA;
+    color: black;
 }
-/*tela visitante*/
-.tela-cadastro h1 {
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
+/* ===== TELA SUCESSO ===== */
 
-.tela-cadastro p {
-	max-width: 600px;
-
-	font-size: clamp(16px, 2vw, 22px);
-	font-weight: 300;
-
-	line-height: 1.8;
-	letter-spacing: 0.5px;
-
-	color: rgba(255, 255, 255, 0.9);
-
-	margin-bottom: 35px;
+.tela-sucesso {
+    text-align: center;
+    color: white;
 }
 
-.tela-cadastro p strong {
-	font-weight: 700;
-	color: white;
+.tela-sucesso #robo {
+    animation: pular 0.8s ease-in-out infinite;
 }
+/* ===== BOTÃO TELA SUCESSO ===== */
 
-/* INPUTS */
+.btn-sucesso {
 
-input,
-select {
-	width: 100%;
-	max-width: 400px;
+    width: 100%;
+max-width: 350px;
 
-	height: 60px;
+height: clamp(60px, 8vw, 90px);
 
-	padding: 0 20px;
-	margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
 
-	box-sizing: border-box;
+text-decoration: none;
 
-	border: none;
-	border-radius: 20px;
+margin-top: 20px;
 
-	background: rgba(255, 255, 255, 0.15);
+border: none;
+border-radius: 50px;
 
-	color: white;
+background: #07005e;
 
-	font-size: 18px;
-	font-family: 'Inter', sans-serif;
+color: white;
 
-	outline: none;
+/* TEXTO MENOR */
+font-size: clamp(18px, 4vw, 24px);
 
-	backdrop-filter: blur(10px);
-}
+font-weight: bold;
 
-/* Placeholder */
-input::placeholder {
-	color: rgba(255, 255, 255, 0.7);
-}
+cursor: pointer;
 
-/* Select */
-select {
-	cursor: pointer;
-}
-
-option {
-	color: black;
+transition: 0.3s;
 }
 
 
-/* CELULAR */
+.btn-sucesso:hover {
+
+    transform: translateY(-4px) scale(1.04);
+
+    box-shadow: 0 0 28px rgba(0, 60, 255, 0.7);
+}
+
+
+.btn-sucesso:active {
+
+    transform: scale(0.96);
+}
+.tela-sucesso #robo {
+    width: clamp(220px, 30vw, 380px);
+}
+
+
+#confete {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+@keyframes pular {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ===== CELULAR ===== */
+
 @media (max-width:768px) {
 
-	h1 {
-		margin-top: -20px;
-		font-size: 42px;
-	}
+    h1 {
+        margin-top: -20px;
+        font-size: 42px;
+    }
 
-	#robo {
-		width: 140px;
-	}
+    #robo {
+        width: 140px;
+    }
 
-	.btn-entrar {
-		height: 70px;
-		font-size: 24px;
-	}
+    .btn-entrar {
+        height: 70px;
+        font-size: 24px;
+    }
 
-	h5 {
-		margin-top: 80px;
-		font-size: 14px;
-	}
+    h5 {
+        margin-top: 80px;
+        font-size: 14px;
+    }
 }
+

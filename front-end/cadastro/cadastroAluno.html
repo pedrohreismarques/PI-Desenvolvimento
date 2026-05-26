@@ -3,53 +3,76 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cadastro do Aluno</title>
+	<title>Cadastro do Aluno</title>
 
-    <link rel="stylesheet" href="Style.css">
+	<link rel="stylesheet" href="Style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/mascotecabeca.png">
 </head>
 
 <body>
 
-    <div class="container tela-cadastro">
+	<div class="container tela-cadastro">
 
-        <img id="robo" src="img/mascotinhomenor.png" alt="Robô">
+		<form action="update" method="get">
 
-        <h1> <strong>Cadastro do Aluno</strong></h1>
+			<img id="robo" src="img/mascotinhomenor.png" alt="Robo´">
 
-        <p>
-            <strong>Preencha suas informações para
-                <br> continuar o acesso :</strong>
-        </p>
+			<h1> <strong>Cadastro do Aluno</strong></h1>
 
-        <input type="text" placeholder="Nome completo">
+			<p>
+				<strong>Preencha suas informações para
+					<br> continuar o acesso :</strong>
+			</p>
 
-        <input type="date" placeholder="Data de Nascimento">
+			<input type="hidden" name="id" value="${id}">
 
-        <select required>
+			<input type="text" name="nome" placeholder="Nome Completo">
 
-            <option value="" disabled selected>
-                Selecione seu curso
-            </option>
+			<input type="date" placeholder="Data de Nascimento">
 
-            <option>Técnico em Informática</option>
 
-            <option>Estética</option>
+			<select name="curso" required>
 
-        </select>
+				<option value="" disabled selected>
+					Selecione seu curso
+				</option>
 
-        <button class="btn">
-            Cadastrar
-        </button>
+				<option value="Aprendizagem">
+					Aprendizagem
+				</option>
 
-    </div>
+				<option value="Estetica">
+					Estetica
+				</option>
 
-    <script src="script.js"></script>
+				<option value="Fotografia">
+					Fotografia
+				</option>
+
+				<option value="Qualificacao profissional">
+					Qualificacao profissional
+				</option>
+
+				<option value="Tecnico em Informatica">
+					Tecnico em Informatica
+				</option>
+			</select>
+
+			<a href="cadastrado.html" class="btn-entrar">
+				Cadastrar
+			</a>
+	
+
+		</form>
+
+	</div>
+
+	<script src="script.js"></script>
 
 </body>
 

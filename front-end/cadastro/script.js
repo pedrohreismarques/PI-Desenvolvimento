@@ -22,3 +22,76 @@ setInterval(() => {
     }
 
 }, 40);
+
+const canvas = document.getElementById("confete");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const confetes = [];
+
+// MENOS CONFETES
+for (let i = 0; i < 70; i++) {
+
+    confetes.push({
+
+        x: Math.random() * canvas.width,
+
+        y: Math.random() * canvas.height - canvas.height,
+
+        // MENORES
+        radius: Math.random() * 4 + 1,
+
+        // MAIS SUAVES
+        speed: Math.random() * 2 + 1,
+
+        // CORES MAIS BONITAS
+        color: [
+            "#0bff03ff",
+            "#fb8500",
+            "#2723f5ff",
+            "#eb028aff",
+            "#23ebc9ff"
+        ][Math.floor(Math.random() * 5)]
+
+    });
+}
+
+function animar() {
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    confetes.forEach(confete => {
+
+        ctx.beginPath();
+
+        ctx.arc(
+            confete.x,
+            confete.y,
+            confete.radius,
+            0,
+            Math.PI * 2
+        );
+
+        ctx.fillStyle = confete.color;
+
+        ctx.fill();
+
+        confete.y += confete.speed;
+
+        // LEVE MOVIMENTO LATERAL
+        confete.x += Math.sin(confete.y * 0.01);
+
+        if (confete.y > canvas.height) {
+
+            confete.y = -20;
+
+            confete.x = Math.random() * canvas.width;
+        }
+    });
+
+    requestAnimationFrame(animar);
+}
+
+animar();
