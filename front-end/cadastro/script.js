@@ -95,3 +95,24 @@ function animar() {
 }
 
 animar();
+
+function mostrarLoading() {
+
+    document.getElementById("loading").style.display = "flex";
+
+    let progresso = 0;
+
+    const barra = document.getElementById("barra");
+
+    const intervalo = setInterval(() => {
+
+        progresso += 5;
+
+        barra.style.width = progresso + "%";
+
+        if (progresso >= 95) {
+            clearInterval(intervalo);
+        }
+
+    }, 100);
+}
