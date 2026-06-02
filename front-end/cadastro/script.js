@@ -132,3 +132,7 @@ document.querySelectorAll("input").forEach(input => {
     });
 
 });
+
+window.onload = () => {
+    document.getElementById("nome").focus();
+};
