@@ -380,6 +380,45 @@ transition: 0.3s;
     50%  { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
+/* TECLADO */
+ 
+#teclado{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#222;
+    padding:10px;
+    z-index:9999;
+    box-shadow:0 -5px 15px rgba(0,0,0,.3);
+}
+ 
+#teclado .linha{
+    display:flex;
+    justify-content:center;
+    margin-bottom:5px;
+}
+ 
+.tecla{
+    width:75px;
+    height:70px;
+    margin:3px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+}
+ 
+.tecla:active{
+    transform:scale(.95);
+}
+ 
+.especial{
+    width:200px;
+}
+ 
 
 /* ===== CELULAR ===== */
 
