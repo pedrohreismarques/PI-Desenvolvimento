@@ -116,3 +116,19 @@ function mostrarLoading() {
 
     }, 100);
 }
+document.querySelectorAll("input").forEach(input => {
+
+    input.addEventListener("focus", () => {
+
+        setTimeout(() => {
+
+            input.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+        }, 300);
+
+    });
+
+});
