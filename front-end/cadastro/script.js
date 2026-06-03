@@ -1,108 +1,123 @@
+// ===== ROBÔ =====
+
 const robo = document.getElementById("robo");
 
-let subindo = true;
-let posicao = 0;
+if (robo) {
 
-setInterval(() => {
+    let subindo = true;
+    let posicao = 0;
 
-    if(subindo){
-        posicao++;
-    }else{
-        posicao--;
-    }
+    setInterval(() => {
 
-    robo.style.transform = `translateY(${-posicao}px)`;
+        if (subindo) {
+            posicao++;
+        } else {
+            posicao--;
+        }
 
-    if(posicao >= 15){
-        subindo = false;
-    }
+        robo.style.transform = `translateY(${-posicao}px)`;
 
-    if(posicao <= 0){
-        subindo = true;
-    }
+        if (posicao >= 15) {
+            subindo = false;
+        }
 
-}, 40);
+        if (posicao <= 0) {
+            subindo = true;
+        }
+
+    }, 40);
+
+}
+
+// ===== CONFETES =====
 
 const canvas = document.getElementById("confete");
-const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+if (canvas) {
 
-const confetes = [];
+    const ctx = canvas.getContext("2d");
 
-// MENOS CONFETES
-for (let i = 0; i < 70; i++) {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-    confetes.push({
+    const confetes = [];
 
-        x: Math.random() * canvas.width,
+    for (let i = 0; i < 70; i++) {
 
-        y: Math.random() * canvas.height - canvas.height,
+        confetes.push({
 
-        // MENORES
-        radius: Math.random() * 4 + 1,
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height - canvas.height,
 
-        // MAIS SUAVES
-        speed: Math.random() * 2 + 1,
+            radius: Math.random() * 4 + 1,
 
-        // CORES MAIS BONITAS
-        color: [
-            "#0bff03ff",
-            "#fb8500",
-            "#2723f5ff",
-            "#eb028aff",
-            "#23ebc9ff"
-        ][Math.floor(Math.random() * 5)]
+            speed: Math.random() * 2 + 1,
 
-    });
+            color: [
+                "#0bff03ff",
+                "#fb8500",
+                "#2723f5ff",
+                "#eb028aff",
+                "#23ebc9ff"
+            ][Math.floor(Math.random() * 5)]
+
+        });
+
+    }
+
+    function animar() {
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        confetes.forEach(confete => {
+
+            ctx.beginPath();
+
+            ctx.arc(
+                confete.x,
+                confete.y,
+                confete.radius,
+                0,
+                Math.PI * 2
+            );
+
+            ctx.fillStyle = confete.color;
+
+            ctx.fill();
+
+            confete.y += confete.speed;
+
+            confete.x += Math.sin(confete.y * 0.01);
+
+            if (confete.y > canvas.height) {
+
+                confete.y = -20;
+                confete.x = Math.random() * canvas.width;
+
+            }
+
+        });
+
+        requestAnimationFrame(animar);
+
+    }
+
+    animar();
+
 }
 
-function animar() {
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    confetes.forEach(confete => {
-
-        ctx.beginPath();
-
-        ctx.arc(
-            confete.x,
-            confete.y,
-            confete.radius,
-            0,
-            Math.PI * 2
-        );
-
-        ctx.fillStyle = confete.color;
-
-        ctx.fill();
-
-        confete.y += confete.speed;
-
-        // LEVE MOVIMENTO LATERAL
-        confete.x += Math.sin(confete.y * 0.01);
-
-        if (confete.y > canvas.height) {
-
-            confete.y = -20;
-
-            confete.x = Math.random() * canvas.width;
-        }
-    });
-
-    requestAnimationFrame(animar);
-}
-
-animar();
+// ===== LOADING =====
 
 function mostrarLoading() {
 
-    document.getElementById("loading").style.display = "flex";
+    const loading = document.getElementById("loading");
+    const barra = document.getElementById("barra");
+
+    if (!loading || !barra) return;
+
+    loading.style.display = "flex";
 
     let progresso = 0;
-
-    const barra = document.getElementById("barra");
 
     const intervalo = setInterval(() => {
 
@@ -115,24 +130,97 @@ function mostrarLoading() {
         }
 
     }, 100);
+
 }
-document.querySelectorAll("input").forEach(input => {
 
-    input.addEventListener("focus", () => {
+// ===== TECLADO =====
 
-        setTimeout(() => {
+const teclado = document.getElementById("teclado");
 
-            input.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-            });
+if (teclado) {
 
-        }, 300);
+    console.log("TECLADO INICIADO");
+
+    let campoAtivo = null;
+    let maiusculo = true;
+
+    document.querySelectorAll('input[type="text"]').forEach(input => {
+
+        input.addEventListener("focus", () => {
+
+            campoAtivo = input;
+
+            console.log("Campo ativo:", input.id);
+
+            setTimeout(() => {
+
+                input.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+
+            }, 300);
+
+        });
 
     });
 
-});
+    document.querySelectorAll(".tecla").forEach(tecla => {
 
-window.onload = () => {
-    document.getElementById("nome").focus();
-};
+        tecla.addEventListener("click", () => {
+
+            console.log("clicou:", tecla.textContent);
+
+            if (!campoAtivo) return;
+
+            if (tecla.id === "shift") {
+
+                maiusculo = !maiusculo;
+
+                tecla.style.background =
+                    maiusculo ? "#2563eb" : "#07005e";
+
+                return;
+            }
+
+            if (tecla.id === "backspace") {
+
+                campoAtivo.value =
+                    campoAtivo.value.slice(0, -1);
+
+                return;
+            }
+
+            if (tecla.id === "espaco") {
+
+                campoAtivo.value += " ";
+
+                return;
+            }
+
+            let letra = tecla.textContent;
+
+            if (maiusculo) {
+
+                letra = letra.toUpperCase();
+
+                maiusculo = false;
+
+                const shift =
+                    document.getElementById("shift");
+
+                if (shift) {
+                    shift.style.background = "#07005e";
+                }
+
+            }
+
+            campoAtivo.value += letra;
+
+            console.log(campoAtivo.value);
+
+        });
+
+    });
+
+}

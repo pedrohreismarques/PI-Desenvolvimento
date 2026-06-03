@@ -14,7 +14,8 @@ body {
 
     font-family: 'Inter', sans-serif;
 
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .container {
@@ -380,45 +381,119 @@ transition: 0.3s;
     50%  { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
-/* TECLADO */
- 
+/* ===== TECLADO ===== */
+
 #teclado{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    background:#222;
-    padding:10px;
-    z-index:9999;
-    box-shadow:0 -5px 15px rgba(0,0,0,.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(15px);
+
+    border-top: 1px solid rgba(255,255,255,.2);
+
+    z-index: 9999;
 }
- 
+
 #teclado .linha{
-    display:flex;
-    justify-content:center;
-    margin-bottom:5px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 6px;
 }
- 
+
+/* recuo igual teclado celular */
+
+#teclado .linha:nth-child(3){
+    padding-left: 20px;
+}
+
+#teclado .linha:nth-child(4){
+    padding-left: 40px;
+}
+
 .tecla{
-    width:75px;
-    height:70px;
-    margin:3px;
-    border:none;
-    border-radius:10px;
-    background:white;
-    font-size:24px;
-    font-weight:bold;
-    cursor:pointer;
+    width: 75px;
+    height: 75px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: white;
+
+    color: #053969;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .15s;
 }
- 
+
+.tecla:hover{
+    background: #e8f3ff;
+}
+
 .tecla:active{
-    transform:scale(.95);
+    transform: scale(.92);
 }
- 
+
 .especial{
-    width:200px;
+    min-width: 140px;
+    width: auto;
+
+    padding: 0 20px;
+
+    background: #07005e;
+
+    color: white;
 }
- 
+
+#espaco{
+    flex: 1;
+    max-width: 250px;
+}
+
+/* espaço para o teclado não cobrir o formulário */
+
+.tela-cadastro{
+    padding-bottom: 320px;
+}
+ /* ===== AJUSTES DO TECLADO ===== */
+
+.tecla{
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: white;
+
+    color: #053969;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .15s;
+}
+
+#shift{
+    min-width: 60px;
+}
+
+#backspace{
+    min-width: 80px;
+}
 
 /* ===== CELULAR ===== */
 
@@ -494,5 +569,9 @@ transition: 0.3s;
 
     #loading img {
         width: 90px;
+    }
+    
+    #teclado{
+        display: none;
     }
 }

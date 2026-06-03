@@ -18,7 +18,7 @@
 
 	<div class="container tela-cadastro">
 
-		<form action="update" method="get">
+		<form action="cadastrado.html" method="get">
 
 			<img id="robo" src="img/mascotinhomenor.png" alt="Robo´">
 
@@ -31,9 +31,9 @@
 
 			<input type="hidden" name="id" value="${id}">
 
-			<input type="text" name="nome" placeholder="Nome Completo">
+			<input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
 
-			<input type="date" placeholder="Data de Nascimento">
+			<input type="date" id="nascimento" name="nascimento" placeholder="Data de Nascimento" required>
 
 
 			<select name="curso" required>
@@ -74,64 +74,68 @@
 		<div id="teclado">
 
 			<div class="linha">
-				<button class="tecla">1</button>
-				<button class="tecla">2</button>
-				<button class="tecla">3</button>
-				<button class="tecla">4</button>
-				<button class="tecla">5</button>
-				<button class="tecla">6</button>
-				<button class="tecla">7</button>
-				<button class="tecla">8</button>
-				<button class="tecla">9</button>
-				<button class="tecla">0</button>
+				<button type="button" class="tecla">1</button>
+				<button type="button" class="tecla">2</button>
+				<button type="button" class="tecla">3</button>
+				<button type="button" class="tecla">4</button>
+				<button type="button" class="tecla">5</button>
+				<button type="button" class="tecla">6</button>
+				<button type="button" class="tecla">7</button>
+				<button type="button" class="tecla">8</button>
+				<button type="button" class="tecla">9</button>
+				<button type="button" class="tecla">0</button>
 			</div>
 
 			<div class="linha">
-				<button class="tecla">Q</button>
-				<button class="tecla">W</button>
-				<button class="tecla">E</button>
-				<button class="tecla">R</button>
-				<button class="tecla">T</button>
-				<button class="tecla">Y</button>
-				<button class="tecla">U</button>
-				<button class="tecla">I</button>
-				<button class="tecla">O</button>
-				<button class="tecla">P</button>
+				<button type="button" class="tecla">q</button>
+				<button type="button" class="tecla">w</button>
+				<button type="button" class="tecla">e</button>
+				<button type="button" class="tecla">r</button>
+				<button type="button" class="tecla">t</button>
+				<button type="button" class="tecla">y</button>
+				<button type="button" class="tecla">u</button>
+				<button type="button" class="tecla">i</button>
+				<button type="button" class="tecla">o</button>
+				<button type="button" class="tecla">p</button>
 			</div>
 
 			<div class="linha">
-				<button class="tecla">A</button>
-				<button class="tecla">S</button>
-				<button class="tecla">D</button>
-				<button class="tecla">F</button>
-				<button class="tecla">G</button>
-				<button class="tecla">H</button>
-				<button class="tecla">J</button>
-				<button class="tecla">K</button>
-				<button class="tecla">L</button>
+				<button type="button" class="tecla">a</button>
+				<button type="button" class="tecla">s</button>
+				<button type="button" class="tecla">d</button>
+				<button type="button" class="tecla">f</button>
+				<button type="button" class="tecla">g</button>
+				<button type="button" class="tecla">h</button>
+				<button type="button" class="tecla">j</button>
+				<button type="button" class="tecla">k</button>
+				<button type="button" class="tecla">l</button>
 			</div>
 
 			<div class="linha">
-				<button class="tecla">Z</button>
-				<button class="tecla">X</button>
-				<button class="tecla">C</button>
-				<button class="tecla">V</button>
-				<button class="tecla">B</button>
-				<button class="tecla">N</button>
-				<button class="tecla">M</button>
+				<button type="button" class="tecla especial" id="shift">⇧</button>
+
+				<button type="button" class="tecla">z</button>
+				<button type="button" class="tecla">x</button>
+				<button type="button" class="tecla">c</button>
+				<button type="button" class="tecla">v</button>
+				<button type="button" class="tecla">b</button>
+				<button type="button" class="tecla">n</button>
+				<button type="button" class="tecla">m</button>
 			</div>
 
 			<div class="linha">
-				<button class="tecla especial" id="espaco">
+				<button type="button" class="tecla especial" id="espaco">
 					ESPAÇO
 				</button>
 
-				<button class="tecla especial" id="backspace">
-					⌫ APAGAR
+				<button type="button" class="tecla especial" id="backspace">
+					⌫
 				</button>
 			</div>
 
 		</div>
+
+	</div>
 
 
 	</div>

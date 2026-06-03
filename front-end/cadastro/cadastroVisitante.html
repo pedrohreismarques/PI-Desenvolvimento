@@ -6,33 +6,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cadastro do Aluno</title>
+    <title>Cadastro do Visitante</title>
 
     <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/mascotecabeca.png">
+
 </head>
 
 <body>
 
     <div class="container tela-cadastro">
 
-        <img id="robo" src="img/mascotinhomenor.png" alt="Robô">
+        <form action="cadastrado.html" method="get">
 
-        <h1> <strong>Cadastro do Visitante</strong></h1>
+            <img id="robo" src="img/mascotinhomenor.png" alt="Robô">
 
-        <p>
-            <strong>Preencha suas informações para
-                <br> continuar o acesso :</strong>
-        </p>
+            <h1><strong>Cadastro do Visitante</strong></h1>
 
-        <input type="text" placeholder="Nome completo">
+            <p>
+                <strong>Preencha suas informações para
+                    <br> continuar o acesso :</strong>
+            </p>
 
-        <input type="date" placeholder="Data de Nascimento">
+            <input type="text" id="nome" placeholder="Nome completo" required>
 
-        <button type="submit" class="btn-entrar" onclick="mostrarLoading()">
-            Cadastrar
-        </button>
+            <input type="date" required>
+
+            <button type="submit" class="btn-entrar">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- TECLADO -->
+
+    <div id="teclado">
+
+        <div class="linha">
+            <button type="button" class="tecla">q</button>
+            <button type="button" class="tecla">w</button>
+            <button type="button" class="tecla">e</button>
+            <button type="button" class="tecla">r</button>
+            <button type="button" class="tecla">t</button>
+            <button type="button" class="tecla">y</button>
+            <button type="button" class="tecla">u</button>
+            <button type="button" class="tecla">i</button>
+            <button type="button" class="tecla">o</button>
+            <button type="button" class="tecla">p</button>
+        </div>
+
+        <div class="linha">
+            <button type="button" class="tecla">a</button>
+            <button type="button" class="tecla">s</button>
+            <button type="button" class="tecla">d</button>
+            <button type="button" class="tecla">f</button>
+            <button type="button" class="tecla">g</button>
+            <button type="button" class="tecla">h</button>
+            <button type="button" class="tecla">j</button>
+            <button type="button" class="tecla">k</button>
+            <button type="button" class="tecla">l</button>
+        </div>
+
+        <div class="linha">
+            <button type="button" class="tecla especial" id="shift">⇧</button>
+
+            <button type="button" class="tecla">z</button>
+            <button type="button" class="tecla">x</button>
+            <button type="button" class="tecla">c</button>
+            <button type="button" class="tecla">v</button>
+            <button type="button" class="tecla">b</button>
+            <button type="button" class="tecla">n</button>
+            <button type="button" class="tecla">m</button>
+        </div>
+
+        <div class="linha">
+            <button type="button" class="tecla especial" id="espaco">
+                ESPAÇO
+            </button>
+
+            <button type="button" class="tecla especial" id="backspace">
+                ⌫
+            </button>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
